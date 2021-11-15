@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;1,400');
+
+
+*{
+    box-sizing: border-box;
+    font-family: Ubuntu;
+}
+html{
+    background-color: #ABA8A9;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+h1{
+  padding-left: .5em;
+}
+.paragraph{
+  padding-left: 1em;
+}
+/* Header Styling */
+.mainHeader{
+    background-color: rgb(75, 195, 53);
+    padding-bottom: 30px;
+}
+
+/* Styling for hyperlinks */
+.nav ul {
+    margin: 0;
+}
+.nav li {
+    display: inline;
+}
+.nav a {
+    display: inline-block;
+    padding: .5em;
+    color: black;
+    text-decoration: none;
+    
+}
+
+.main-nav {
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: light;
+    border-bottom: 1px solid rgba(255, 255, 255,.3);
+}
+
+.main-nav li{
+    padding: 0 5%;
+}
+
+.nav a:hover {
+    background-color: rgba(255, 255, 255,.3);
+}
+
+/* Footer styling (stay at the bottom) */
+.footer-main img{ 
+    width: 40px;
+    height: 40px;
+    padding: 0 .10em;
+}
+
+.nav-footer {
+    background-color: #696869;
+    padding-left: 80%;
+    margin: 0;
+}
+.footer-main{
+    margin-top: auto;
+    padding-top: 50px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 800px;
+    position: relative;
+    margin: auto;
+    
+  }
+  
+  /* Hide the images */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 5px 5px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 5px 0 0 5px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* The dots */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
