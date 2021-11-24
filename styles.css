@@ -19,10 +19,19 @@ body{
     flex-direction: column;
 }
 h1{
-  padding-left: .5em;
+  margin-left: auto;
+  margin-right: auto;
+  position:center;
+  text-align: center;
+  padding: 0;
 }
 .paragraph{
-  padding-left: 1em;
+  margin-bottom: 0;
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  max-width: 900px;
 }
 /* Header Styling */
 .mainHeader{
@@ -40,7 +49,7 @@ h1{
 .nav a {
     display: inline-block;
     padding: .5em;
-    color: black;
+    color: whitesmoke;
     text-decoration: none;
     
 }
@@ -69,8 +78,10 @@ h1{
 
 .nav-footer {
     background-color: #696869;
-    padding-left: 80%;
-    margin: 0;
+    padding-right: 5%;
+    padding-left: 70%;
+    margin-bottom: 0;
+    position: center;
 }
 .footer-main{
     margin-top: auto;
@@ -116,7 +127,31 @@ h1{
   .prev:hover, .next:hover {
     background-color: rgba(0,0,0,0.8);
   }
+  /* Play/Pause Button */
+  .button {
+    display: flex;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+    margin-left: auto;
+    margin-right: auto;
+  }
   
+  .button:hover {background-color: #3e8e41}
+  
+  .button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
   /* The dots */
   .dot {
     cursor: pointer;

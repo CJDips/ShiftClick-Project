@@ -25,8 +25,28 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
-function startAutoplay(){
-  setInterval(function(){ 
-    plusSlides(1)
- }, 5000);
+
+// autoplay & play/pause button 
+let slideInterval = setInterval(function(){ 
+  plusSlides(1)
+}, 4000);
+let playing = true;
+let pauseButton = document.getElementById('pause');
+
+function pauseSlideshow(){
+	pauseButton.innerHTML = 'Play';
+	playing = false;
+	clearInterval(slideInterval);
 }
+
+function playSlideshow(){
+	pauseButton.innerHTML = 'Pause';
+	playing = true;
+	slideInterval = setInterval(function(){
+    plusSlides(1)},4000);
+}
+
+pauseButton.onclick = function(){
+	if(playing){ pauseSlideshow(); }
+	else{ playSlideshow(); }
+};
